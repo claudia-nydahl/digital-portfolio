@@ -70,7 +70,9 @@
 .tall-750 {
 	height: 750px;
 }
-
+.dk-hidden {
+	display: none;
+}
 /* tablet */
 
 @media screen and (min-width:768px) and (max-width:1024px) {
@@ -188,5 +190,17 @@
 	}
 	.sm-hidden {
 		display: none;
-	} 
+	}
+	.dk-hidden {
+		display: block;
+	}
+	.sm-tall-500 {
+		height: 500px;
+	}
+	.sm-tall-260 {
+		height: 260px;
+	}
+	.sm-tall-280 {
+		height: 280px;
+	}
 }

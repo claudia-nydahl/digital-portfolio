@@ -1,3 +1,9 @@
+// menu functionality 
+
+$('.menu-icon').click(function() {
+	$('.drop-menu').fadeToggle();
+})
+
 // Show and hide differenet portfolio categories, change focus states on menu items
 
 $('.all-btn').click(function() {
@@ -82,4 +88,6 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block"; 
   dots[slideIndex-1].className += " active";
 }
+
+
 

@@ -4,7 +4,7 @@
 @import 'variables.scss';
 @import 'mixins.scss';
 @import 'column-grid.scss';
-@import 'media-queries.scss';
+// @import 'media-queries.scss';
 
 /* basic text styles */ 
 
@@ -37,10 +37,10 @@ h1 {
 	width: 80px;
 	background-color: $dark-grey; 
 	z-index: 9999;
-	transition: transform 0.3s all ease;
+	transition: transform 0.45s all ease;
 	&:hover {
 		background-color: $blue;
-		transition: transform 0.3s all ease;
+		transition: transform 0.45s all ease;
 	}
 }
 .logo-text {
@@ -53,20 +53,32 @@ h1 {
 }
 
 /* menu */ 
-
-.main-menu {
-	font-size: 16px; 
-	text-transform: uppercase;	
+.title {
+	text-transform: uppercase;
+	font-weight: 700;
+	z-index: 9999;
 	position: fixed;
-	z-index: 9998;
+	top: 11px;
+	left: 185px;
+}
+.menu {
+	position: fixed;
 	top: 0;
 	left: 0;
 	background-color: rgba(255,255,255,0.7);
+	height: 40px;
+	z-index: 9999;
+}
+.main-menu {
+	font-size: 16px; 
+	text-transform: uppercase;	
+	z-index: 9998;
 	h2 {
 		float: left;
 		font-weight: 700;
 		margin-top: 11px;
 		margin-left: 185px;
+		z-index: 9999;
 	}
 	ul {
 		margin-right: 8.33%;
@@ -87,6 +99,39 @@ h1 {
 			transition: 0.25s all ease;
 		}
 	}
+}
+.drop-menu {
+	font-size: 16px; 
+	text-transform: uppercase;	
+	z-index: 9998;
+	display: none;
+	li {
+		display: block;
+		text-align: right;
+		padding: 15px 30px;
+	}
+	a {
+		font-weight: 100;
+		background-color: rgba(255,255,255,0.7);
+		padding: 8px;
+		// letter-spacing: 6px;
+		transition: 0.45s all ease;
+		&:hover {
+			color: $blue;
+			transition: 0.45s all ease;
+		}
+	}
+}
+.list {
+	margin-top: 40px;
+	padding-top: 15px;
+}
+.menu-icon {
+	float: right;
+	font-size: 1.5em;
+	position: fixed;
+	top: 12px;
+	right: 30px;
 }
 
 /* footer styles */ 
@@ -126,11 +171,11 @@ button {
 	margin-left: 90px;
 	margin-top: 50px;
 	border: none;
-	transition: 0.25s all ease;
+	transition: 0.45s all ease;
 	border-radius: 0;
 	&:hover {
 		background-color: $blue;
-		transition: 0.25s all ease;
+		transition: 0.45s all ease;
 	}
 	a {
 		color: #ffffff;
@@ -143,8 +188,8 @@ button {
 .portfolio-page-btn {
 		margin-top: 40px;
 		margin-left: 30px;
+		display: inline;
 	}
-
 /* images */ 
 
 .about-image {
@@ -194,7 +239,7 @@ textarea {
 /* home page */
 
 .home-banner {
-	margin-top: 40px;
+	// margin-top: 40px;
 	// background-color: $grey;
 	background-image: url('../img/geometry.png');
 	background-position: top;
@@ -249,7 +294,9 @@ textarea {
 	}
 }
 .contact-section {
-	background-color: $grey;
+	// background-color: $grey;
+	background-image: url('../img/geometry.png');
+	background-position: top;
 	h1 {
 		margin: 0 auto;
 		margin-top: 300px;
@@ -457,11 +504,7 @@ textarea {
 		font-size: 2em;
 		margin-left: 90px;
 	}
-	&:nth-of-type(2n) {
-		margin-top: 10px;
-	}
 }
-
 /* project slideshows */ 
 
 * {box-sizing:border-box}
@@ -657,4 +700,187 @@ textarea {
 .mosaic-travel7 {
 	@extend .sir1;
 	background-image: url('../img/mosaic-travel-7.png');
+}
+.woven1 {
+	@extend .sir1;
+	background-image: url('../img/woven-1.png');
+}
+.woven2 {
+	@extend .sir1;
+	background-image: url('../img/woven-2.png');
+}
+.woven3 {
+	@extend .sir1;
+	background-image: url('../img/woven-3.png');
+}
+.woven4 {
+	@extend .sir1;
+	background-image: url('../img/woven-4.png');
+}
+.woven5 {
+	@extend .sir1;
+	background-image: url('../img/woven-5.png');
+}
+.woven6 {
+	@extend .sir1;
+	background-image: url('../img/woven-6.png');
+}
+.woven7 {
+	@extend .sir1;
+	background-image: url('../img/woven-7.png');
+}
+.yayoi-kusama1 {
+	@extend .sir1;
+	background-image: url('../img/yayoi-kusama-1.png');
+}
+.yayoi-kusama2 {
+	@extend .sir1;
+	background-image: url('../img/yayoi-kusama-2.png');
+}
+.yayoi-kusama3 {
+	@extend .sir1;
+	background-image: url('../img/yayoi-kusama-3.png');
+}
+.yayoi-kusama4 {
+	@extend .sir1;
+	background-image: url('../img/yayoi-kusama-4.png');
+}
+.yayoi-kusama5 {
+	@extend .sir1;
+	background-image: url('../img/yayoi-kusama-5.png');
+}
+.yayoi-kusama6 {
+	@extend .sir1;
+	background-image: url('../img/yayoi-kusama-6.png');
+}
+.yayoi-kusama7 {
+	@extend .sir1;
+	background-image: url('../img/yayoi-kusama-7.png');
+}
+.yuschav-arly1 {
+	@extend .sir1;
+	background-image: url('../img/yuschav-arly-1.png');
+}
+.yuschav-arly2 {
+	@extend .sir1;
+	background-image: url('../img/yuschav-arly-2.png');
+}
+.yuschav-arly3 {
+	@extend .sir1;
+	background-image: url('../img/yuschav-arly-3.png');
+}
+.yuschav-arly4 {
+	@extend .sir1;
+	background-image: url('../img/yuschav-arly-4.png');
+}
+
+@media screen and (min-width:180px) and (max-width:767px) {
+	h1 {
+		font-size: 3.2em;
+	}
+	.logo {
+		left: 30px;
+	}
+	.menu {
+		height: 50px;
+	}
+	.title {
+		top: 16px;
+		left: 130px;
+	}
+	.section {
+		margin-top: 70px;
+		ul {
+			width: auto;
+		}
+		li {
+			display: block;
+			padding-left: 0;
+		}
+	}
+	.home-banner {
+		h1 {
+			margin-left: 30px;
+		}
+	}
+	button {
+		margin-left: 30px;
+	}
+	.content-section {
+		h1 {
+			margin-top: 30px;
+			margin-left: 30px;
+		}
+		p {
+			margin-left: 30px;
+			margin-right: 30px;
+		}
+	}
+	.skills-section {
+		h1 {
+			margin-left: 30px;
+			margin-right: 30px;
+		}
+	}
+	.icons-section {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	.skill-icon {
+		width: 100%;
+	}
+	.one-third {
+		width: 100%;
+		h2 {
+			margin-top: 0;
+		}
+	}
+	.contact-section-2 {
+		h1 {
+			margin-left: 30px;
+		}
+		p {
+			margin-left: 30px;
+			margin-right: 30px;
+		}
+	}
+	.contact-social-media {
+		margin-left: 30px;
+	}
+	form {
+		margin-left: 30px;
+		margin-right: 30px;
+	}
+	input {
+		margin-bottom: 10px;
+	}
+	.form-button {
+		margin-left: 30px;
+		margin-right: 30px;
+	}
+	.grid {
+		padding-left:0;
+		padding-right: 0;
+	}
+	.project-section {
+		p {
+			margin-left: 30px;
+			margin-right: 30px;
+		}
+	}
+	.portfolio-page-btn {
+		margin-top: 20px;
+	}
+	.slideshow-container {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	.prev {
+		left: 30px;
+	}
+	.next {
+  		right: 30px;
+	}
+}
+@media screen and (min-width:768px) and (max-width:1024px) {
 }

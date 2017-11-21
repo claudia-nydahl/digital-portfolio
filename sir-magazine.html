@@ -12,46 +12,54 @@
 </head>
 <body>
 	<header>
-		<section class="col-dk-12">
+		<section class="col-dk-12 menu">
 			<a href="index.html">
 				<div class="logo">
 					<h1 class="logo-text">C</h1>
 				</div>
 			</a>
-			<nav class="main-menu col-dk-12 tall-40">
-				<h2>Claudia Nydahl</h2>
+			<h2 class="title">Claudia Nydahl</h2>
+
+			<nav class="main-menu col-dk-12 tall-40 sm-hidden">
 				<ul>
 					<li><a href="contact.html">Contact</a></li>
 					<li><a href="portfolio.html">Portfolio</a></li>
 				</ul>
 			</nav>
-		</section>
+
+			<a href="#" class="menu-icon dk-hidden"><i class="fa fa-bars"></i></a>
+			<nav class="drop-menu col-dk-12 tall-40 dk-hidden">
+				<ul class="list">
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="portfolio.html">Portfolio</a></li>
+				</ul>
+			</nav>
 	</header>
 
 	<main>
 		<section class="col-dk-12 project-section">
-			<section class="col-dk-5 slideshow-container">
+			<section class="col-dk-5 col-sm-12 slideshow-container">
 
 				<div class="mySlides fade">
-					<div class="sir1 tall-400"></div>
+					<div class="sir1 tall-400 sm-tall-260"></div>
 				</div>
 
 				<div class="mySlides fade">
-					<div class="sir2 tall-400"></div>
+					<div class="sir2 tall-400 sm-tall-260"></div>
 				</div>
 
 				<div class="mySlides fade">
-					<div class="sir3 tall-400"></div>
+					<div class="sir3 tall-400 sm-tall-260"></div>
 				</div>
 
 				<div class="mySlides fade">
-					<div class="sir4 tall-400"></div>
+					<div class="sir4 tall-400 sm-tall-260"></div>
 				</div>
 
 				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
   				<a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-  				<div style="text-align:center;">
+  				<div style="text-align:center;" class="sm-hidden">
 	  				<span class="dot" onclick="currentSlide(1)"></span> 
 	  				<span class="dot" onclick="currentSlide(2)"></span> 
 	 				<span class="dot" onclick="currentSlide(3)"></span> 
@@ -59,7 +67,7 @@
 				</div>
 			</section>
 
-			<section class="col-dk-7">
+			<section class="col-dk-7 col-sm-12">
 				<p>This magazine is based on the famous fashion designer, Paul Smith. The name of the magazine is ‘Sir’, as the designer is known (Sir Paul Smith). The magazine is based solely on Paul Smith’s unique style ('classic with a twist'), his designs and his life. It shows the diversity, sophistication and creativity of his work as a designer. The magazine would target Paul Smith fanatics, stylish creatives and trend aware people. The style of the magazine is ‘classic with a twist’, mimicking the general style of Paul Smith’s designs. This is achieved through the use of a simple, geometric layout with bold and colourful elements.</p>
 				<button class="portfolio-page-btn"><a href="portfolio.html">Back to Portfolio</a></button>
 			</section>

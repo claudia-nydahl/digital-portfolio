@@ -12,15 +12,24 @@
 </head>
 <body>
 	<header>
-		<section class="col-dk-12">
+		<section class="col-dk-12 menu">
 			<a href="index.html">
 				<div class="logo">
 					<h1 class="logo-text">C</h1>
 				</div>
 			</a>
-			<nav class="main-menu col-dk-12 tall-40">
-				<h2>Claudia Nydahl</h2>
+			<h2 class="title">Claudia Nydahl</h2>
+
+			<nav class="main-menu col-dk-12 tall-40 sm-hidden">
 				<ul>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="portfolio.html">Portfolio</a></li>
+				</ul>
+			</nav>
+
+			<a href="#" class="menu-icon dk-hidden"><i class="fa fa-bars"></i></a>
+			<nav class="drop-menu col-dk-12 tall-40 dk-hidden">
+				<ul class="list">
 					<li><a href="contact.html">Contact</a></li>
 					<li><a href="portfolio.html">Portfolio</a></li>
 				</ul>
@@ -30,40 +39,40 @@
 
 	<main>
 		<section class="col-dk-12 project-section">
-			<section class="col-dk-5 slideshow-container">
+			<section class="col-dk-5 col-sm-12 slideshow-container">
 
 				<div class="mySlides fade">
-					<div class="mosaic-travel1 tall-400"></div>
+					<div class="mosaic-travel1 tall-400 sm-tall-260"></div>
 				</div>
 
 				<div class="mySlides fade">
-					<div class="mosaic-travel2 tall-400"></div>
+					<div class="mosaic-travel2 tall-400 sm-tall-260"></div>
 				</div>
 
 				<div class="mySlides fade">
-					<div class="mosaic-travel3 tall-400"></div>
+					<div class="mosaic-travel3 tall-400 sm-tall-260"></div>
 				</div>
 
 				<div class="mySlides fade">
-					<div class="mosaic-travel4 tall-400"></div>
+					<div class="mosaic-travel4 tall-400 sm-tall-260"></div>
 				</div>
 
 				<div class="mySlides fade">
-					<div class="mosaic-travel5 tall-400"></div>
+					<div class="mosaic-travel5 tall-400 sm-tall-260"></div>
 				</div>
 
 				<div class="mySlides fade">
-					<div class="mosaic-travel6 tall-400"></div>
+					<div class="mosaic-travel6 tall-400 sm-tall-260"></div>
 				</div>
 
 				<div class="mySlides fade">
-					<div class="mosaic-travel7 tall-400"></div>
+					<div class="mosaic-travel7 tall-400 sm-tall-260"></div>
 				</div>
 
 				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
   				<a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-  				<div style="text-align:center; padding-top: 20px;">
+  				<div style="text-align:center; padding-top: 20px;" class="sm-hidden">
 	  				<span class="dot" onclick="currentSlide(1)"></span> 
 	  				<span class="dot" onclick="currentSlide(2)"></span> 
 	 				<span class="dot" onclick="currentSlide(3)"></span> 
@@ -74,7 +83,7 @@
 				</div>
 			</section>
 
-			<section class="col-dk-7">
+			<section class="col-dk-7 col-sm-12">
 				<p>This one-page website was designed for a travel company targeted at young adults, focusing on affordable travel. It features a series of different packages for the users to choose from as well as reviews and articles about the tours and locations.</p>
 				<button class="portfolio-page-btn"><a href="https://claudia-nydahl.github.io/mosaic-travel/" target="_blank">Link to website</a></button>
 				<button class="portfolio-page-btn"><a href="portfolio.html">Back to Portfolio</a></button>

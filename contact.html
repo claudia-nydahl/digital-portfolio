@@ -12,15 +12,24 @@
 </head>
 <body>
 	<header>
-		<section class="col-dk-12">
+		<section class="col-dk-12 menu">
 			<a href="index.html">
 				<div class="logo">
 					<h1 class="logo-text">C</h1>
 				</div>
 			</a>
-			<nav class="main-menu col-dk-12 tall-40">
-				<h2>Claudia Nydahl</h2>
+			<h2 class="title">Claudia Nydahl</h2>
+
+			<nav class="main-menu col-dk-12 tall-40 sm-hidden">
 				<ul>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="portfolio.html">Portfolio</a></li>
+				</ul>
+			</nav>
+
+			<a href="#" class="menu-icon dk-hidden"><i class="fa fa-bars"></i></a>
+			<nav class="drop-menu col-dk-12 tall-40 dk-hidden">
+				<ul class="list">
 					<li><a href="contact.html">Contact</a></li>
 					<li><a href="portfolio.html">Portfolio</a></li>
 				</ul>
@@ -29,7 +38,7 @@
 	</header>
 
 	<main>
-		<section class="col-dk-7 contact-section-2">
+		<section class="col-dk-7 col-sm-12 contact-section-2">
 			<h1>Contact</h1>
 			<p class="contact-1">I would love to speak to you. Feel free to call, send a mail or direct message through social media, or simply fill out the contact form.</p>
 			<p class="contact-2"><a href="tel:0636869785">(c) 063 686 9785</a></p>
@@ -40,7 +49,7 @@
 				<i class="fa fa-linkedin" aria-hidden="true"></i>
 			</div>
 		</section>
-		<section class="col-dk-5 contact-form">
+		<section class="col-dk-5 col-sm-12 contact-form">
 			<form action="mailto:claudia.nydahl@gmail.com" method="post">
 				<input name="name" placeholder="Name" type="text"> 
 				<input name="email" placeholder="Email" type="text"> 
