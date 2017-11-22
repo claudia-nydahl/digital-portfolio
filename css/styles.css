@@ -96,7 +96,9 @@
     display: block;
     width: 100%; }
   .md-hidden {
-    display: none; } }
+    display: none; }
+  .md-tall-500 {
+    height: 500px; } }
 
 /* mobile */
 @media screen and (min-width: 180px) and (max-width: 767px) {
@@ -142,22 +144,31 @@
     height: 280px; } }
 
 /* basic text styles */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  position: relative;
+  min-height: 100%; }
+
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
-  background-color: #f1f2f2; }
+  background-color: #f1f2f2;
+  margin-bottom: 60px; }
 
 a {
   color: #000000; }
 
 p {
-  line-height: 1.6; }
+  line-height: 1.8; }
 
 h1 {
   font-size: 4em;
   text-transform: uppercase;
   font-weight: 700;
-  line-height: 0.9;
+  line-height: 1;
   margin-left: 90px; }
 
 /* logo */
@@ -245,7 +256,8 @@ h1 {
   .drop-menu li {
     display: block;
     text-align: right;
-    padding: 15px 30px; }
+    padding: 15px 30px;
+    padding-right: 0; }
   .drop-menu a {
     font-weight: 100;
     background-color: rgba(255, 255, 255, 0.7);
@@ -268,32 +280,40 @@ h1 {
   font-size: 1.5em;
   position: fixed;
   top: 12px;
-  right: 30px; }
+  right: 15px; }
 
 /* footer styles */
-footer {
-  margin-top: 30px !important; }
-  footer .social-media {
-    width: 174px;
-    margin: 0 auto;
-    margin-top: 20px; }
-  footer i {
-    font-size: 20px !important;
-    text-align: center;
-    padding: 0 20px; }
-    footer i:hover {
-      color: #008080; }
-  footer p {
-    font-size: 0.7em;
-    text-transform: uppercase;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 10px; }
+footer .social-media {
+  width: 174px;
+  margin: 0 auto;
+  margin-top: 30px; }
+
+footer i {
+  font-size: 20px !important;
+  text-align: center;
+  padding: 0 20px; }
+  footer i:hover {
+    color: #008080; }
+
+footer p {
+  font-size: 0.7em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
+
+section.main-section {
+  padding-bottom: 100px; }
 
 /* button styles */
 button, .form-button {
   background-color: #414042;
-  width: 230px;
+  width: 250px;
   height: 45px;
   text-align: center;
   display: block;
@@ -311,6 +331,7 @@ button, .form-button {
     transition: 0.45s all ease; }
   button a, .form-button a {
     color: #ffffff;
+    padding: 10px;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 100;
@@ -365,7 +386,8 @@ textarea {
 /* home page */
 .home-banner {
   background-image: url("../img/geometry.png");
-  background-position: top; }
+  background-position: top;
+  height: 95vh; }
   .home-banner h1 {
     font-size: 5em;
     margin-left: 90px; }
@@ -460,6 +482,13 @@ textarea {
     .section {
       display: block; } }
 
+.category-heading {
+  margin: 0 auto;
+  margin-top: 40px;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 100; }
+
 .grid {
   display: grid;
   grid-gap: 20px;
@@ -510,8 +539,6 @@ textarea {
     background-image: url("../img/int-mag-1.png"); }
   .item:nth-of-type(3n), .item2:nth-of-type(3n), .item3:nth-of-type(3n) {
     background-image: url("../img/umi-1.png"); }
-  .item:nth-of-type(4n), .item2:nth-of-type(4n), .item3:nth-of-type(4n) {
-    background-image: url("../img/sir-4.png"); }
   .item:hover:after, .item2:hover:after, .item3:hover:after {
     content: '';
     position: absolute;
@@ -549,9 +576,9 @@ textarea {
     background-image: url("../img/yuschav-arly.png"); }
 
 .item3 {
-  background-image: url("../img/showreel-tmb.png"); }
+  background-image: url("../img/design-showreel.png"); }
   .item3:nth-of-type(2n) {
-    background-image: url("../img/graphic-icon.png"); }
+    background-image: url("../img/self-promotion.png"); }
   .item3:nth-of-type(3n) {
     background-image: url("../img/web-icon.png"); }
 
@@ -582,6 +609,7 @@ textarea {
 .project-section {
   padding-top: 120px; }
   .project-section p {
+    margin-top: 0;
     margin-left: 30px;
     margin-right: 90px; }
 
@@ -611,7 +639,7 @@ textarea {
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 35%;
+  top: 45%;
   width: auto;
   margin-top: -22px;
   padding: 25px;
@@ -629,22 +657,6 @@ textarea {
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   color: rgba(0, 0, 0, 0.8); }
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  -webkit-transition: background-color 0.6s ease;
-  -o-transition: background-color 0.6s ease;
-  transition: background-color 0.6s ease; }
-
-.active, .dot:hover {
-  background-color: #717171; }
 
 /* Fading animation */
 .fade {
@@ -818,72 +830,180 @@ textarea {
 .yuschav-arly4 {
   background-image: url("../img/yuschav-arly-4.png"); }
 
+/* videos */
+.video {
+  display: block;
+  padding: 0 90px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.project-video {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.video-content {
+  margin-top: 30px; }
+  .video-content p {
+    margin-left: 90px; }
+
+.video-page-btn {
+  margin-left: 90px;
+  margin-top: 30px; }
+
+/* media queries */
 @media screen and (min-width: 180px) and (max-width: 767px) {
   h1 {
     font-size: 3.2em; }
+  p {
+    font-size: 15px; }
   .logo {
-    left: 30px; }
+    left: 20px; }
   .menu {
     height: 50px; }
   .title {
     top: 16px;
-    left: 130px; }
+    left: 115px; }
+  .banner-title h1 {
+    font-size: 4.2em; }
   .section {
-    margin-top: 70px; }
+    margin-top: 70px;
+    padding: 0;
+    padding-top: 35px;
+    margin-left: 20px;
+    margin-right: 20px; }
     .section ul {
       width: auto; }
     .section li {
       display: block;
       padding-left: 0; }
   .home-banner h1 {
-    margin-left: 30px; }
+    margin-left: 20px; }
   button, .form-button {
-    margin-left: 30px; }
+    margin-left: 20px; }
   .content-section h1 {
     margin-top: 30px;
-    margin-left: 30px; }
+    margin-left: 20px; }
   .content-section p {
-    margin-left: 30px;
-    margin-right: 30px; }
+    margin-left: 20px;
+    margin-right: 20px; }
   .skills-section h1 {
-    margin-left: 30px;
-    margin-right: 30px; }
+    margin-left: 20px;
+    margin-right: 20px; }
   .icons-section {
-    padding-left: 30px;
-    padding-right: 30px; }
+    padding-left: 20px;
+    padding-right: 20px; }
   .skill-icon {
     width: 100%; }
   .one-third {
     width: 100%; }
     .one-third h2 {
       margin-top: 0; }
+  .contact-section h1 {
+    margin-left: 20px;
+    margin-right: 20px; }
   .contact-section-2 h1 {
-    margin-left: 30px; }
+    margin-left: 20px; }
   .contact-section-2 p {
-    margin-left: 30px;
-    margin-right: 30px; }
+    margin-left: 20px;
+    margin-right: 20px; }
   .contact-social-media {
-    margin-left: 30px; }
+    margin-left: 20px; }
   form {
-    margin-left: 30px;
-    margin-right: 30px; }
+    margin-left: 20px;
+    margin-right: 20px; }
   input, textarea {
     margin-bottom: 10px; }
   .form-button {
-    margin-left: 30px;
-    margin-right: 30px; }
+    margin-left: 0; }
+  .category-heading {
+    text-align: left;
+    margin-left: 0; }
   .grid {
     padding-left: 0;
     padding-right: 0; }
   .project-section p {
-    margin-left: 30px;
-    margin-right: 30px; }
+    margin-left: 20px;
+    margin-right: 20px; }
   .portfolio-page-btn {
     margin-top: 20px; }
   .slideshow-container {
-    padding-left: 30px;
-    padding-right: 30px; }
+    padding-left: 20px;
+    padding-right: 20px; }
   .prev {
-    left: 30px; }
+    left: 20px; }
   .next {
-    right: 30px; } }
+    right: 20px; }
+  .video {
+    padding: 0 20px; }
+  .video-page-btn {
+    margin-left: 20px; } }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .logo {
+    left: 40px; }
+  .title {
+    left: 135px; }
+  .main-menu ul {
+    margin-right: 40px; }
+  .main-menu li {
+    padding-right: 0;
+    padding-left: 25px; }
+  .home-banner h1 {
+    margin-left: 40px; }
+  button, .form-button {
+    margin-left: 40px; }
+  .content-section h1 {
+    margin-top: 85px; }
+  .content-section p {
+    margin-right: 40px; }
+  .skills-section h1 {
+    margin-left: 40px; }
+  .icons-section {
+    padding-left: 40px;
+    padding-right: 40px; }
+  .section {
+    margin-top: 55px;
+    padding-left: 40px;
+    padding-right: 40px; }
+  .slideshow-container {
+    padding-left: 40px;
+    padding-right: 40px; }
+  .prev, .next {
+    top: 48%; }
+  .prev {
+    left: 40px; }
+  .next {
+    right: 40px; }
+  .project-section p {
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px; }
+  .md-button {
+    width: 550px;
+    display: block;
+    margin: 0 auto; }
+  .portfolio-page-btn {
+    display: inline;
+    margin-left: 40px;
+    margin-top: 20px; }
+  .contact-section-2 h1 {
+    margin-left: 40px; }
+  .contact-section-2 p {
+    margin-left: 40px;
+    margin-right: 40px; }
+  .contact-social-media {
+    margin-left: 40px; }
+  form {
+    margin-left: 40px;
+    margin-right: 40px; }
+  input, textarea {
+    margin-bottom: 15px; }
+  .form-button {
+    margin-left: 0; }
+  .video {
+    padding: 0 40px; }
+  .video-page-btn {
+    margin-left: 40px; } }
