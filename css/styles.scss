@@ -405,6 +405,18 @@ textarea {
 	&:nth-of-type(3n) {
 	    background-image: url('../img/umi-1.png');
 	}
+
+	&:nth-of-type(4n) {
+	    background-image: url('../img/advertising.png');
+	}
+
+	&:nth-of-type(5n) {
+	    background-image: url('../img/iconography.png');
+	}
+
+	&:nth-of-type(6n) {
+	    background-image: url('../img/typographic-poster.png');
+	}
   
   	&:hover {
 	    &:after {
@@ -614,6 +626,22 @@ textarea {
 .umi2 {
 	@extend .sir1;
 	background-image: url('../img/umi-2.png');
+}
+.advertising1 {
+	@extend .sir1;
+	background-image: url('../img/advertising.png');
+}
+.iconography1 {
+	@extend .sir1;
+	background-image: url('../img/iconography.png');
+}
+.iconography2 {
+	@extend .sir1;
+	background-image: url('../img/iconography-tablet.png');
+}
+.typography1 {
+	@extend .sir1;
+	background-image: url('../img/typographic-poster.png');
 }
 .portfolio-ui1 {
 	@extend .sir1;

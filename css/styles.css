@@ -539,6 +539,12 @@ textarea {
     background-image: url("../img/int-mag-1.png"); }
   .item:nth-of-type(3n), .item2:nth-of-type(3n), .item3:nth-of-type(3n) {
     background-image: url("../img/umi-1.png"); }
+  .item:nth-of-type(4n), .item2:nth-of-type(4n), .item3:nth-of-type(4n) {
+    background-image: url("../img/advertising.png"); }
+  .item:nth-of-type(5n), .item2:nth-of-type(5n), .item3:nth-of-type(5n) {
+    background-image: url("../img/iconography.png"); }
+  .item:nth-of-type(6n), .item2:nth-of-type(6n), .item3:nth-of-type(6n) {
+    background-image: url("../img/typographic-poster.png"); }
   .item:hover:after, .item2:hover:after, .item3:hover:after {
     content: '';
     position: absolute;
@@ -678,7 +684,7 @@ textarea {
     opacity: 1; } }
 
 /* slide images */
-.sir1, .sir2, .sir3, .sir4, .int-mag1, .int-mag2, .int-mag3, .int-mag4, .umi1, .umi2, .portfolio-ui1, .portfolio-ui2, .portfolio-ui3, .portfolio-ui4, .portfolio-ui5, .portfolio-ui6, .portfolio-ui7, .portfolio-ui8, .portfolio-ui9, .ww-ui1, .ww-ui2, .ww-ui3, .ww-ui4, .ww-ui5, .mosaic-travel1, .mosaic-travel2, .mosaic-travel3, .mosaic-travel4, .mosaic-travel5, .mosaic-travel6, .mosaic-travel7, .woven1, .woven2, .woven3, .woven4, .woven5, .woven6, .woven7, .yayoi-kusama1, .yayoi-kusama2, .yayoi-kusama3, .yayoi-kusama4, .yayoi-kusama5, .yayoi-kusama6, .yayoi-kusama7, .yuschav-arly1, .yuschav-arly2, .yuschav-arly3, .yuschav-arly4 {
+.sir1, .sir2, .sir3, .sir4, .int-mag1, .int-mag2, .int-mag3, .int-mag4, .umi1, .umi2, .advertising1, .iconography1, .iconography2, .typography1, .portfolio-ui1, .portfolio-ui2, .portfolio-ui3, .portfolio-ui4, .portfolio-ui5, .portfolio-ui6, .portfolio-ui7, .portfolio-ui8, .portfolio-ui9, .ww-ui1, .ww-ui2, .ww-ui3, .ww-ui4, .ww-ui5, .mosaic-travel1, .mosaic-travel2, .mosaic-travel3, .mosaic-travel4, .mosaic-travel5, .mosaic-travel6, .mosaic-travel7, .woven1, .woven2, .woven3, .woven4, .woven5, .woven6, .woven7, .yayoi-kusama1, .yayoi-kusama2, .yayoi-kusama3, .yayoi-kusama4, .yayoi-kusama5, .yayoi-kusama6, .yayoi-kusama7, .yuschav-arly1, .yuschav-arly2, .yuschav-arly3, .yuschav-arly4 {
   background-image: url("../img/sir-1.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -712,6 +718,18 @@ textarea {
 
 .umi2 {
   background-image: url("../img/umi-2.png"); }
+
+.advertising1 {
+  background-image: url("../img/advertising.png"); }
+
+.iconography1 {
+  background-image: url("../img/iconography.png"); }
+
+.iconography2 {
+  background-image: url("../img/iconography-tablet.png"); }
+
+.typography1 {
+  background-image: url("../img/typographic-poster.png"); }
 
 .portfolio-ui1 {
   background-image: url("../img/portfolio-ui-1.png"); }
